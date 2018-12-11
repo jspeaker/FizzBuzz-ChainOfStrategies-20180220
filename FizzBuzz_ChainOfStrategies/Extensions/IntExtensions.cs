@@ -2,9 +2,6 @@
 {
     public static class IntExtensions
     {
-        public static bool IsDivisibleBy(this int dividend, int divisor)
-        {
-            return dividend % divisor == 0;
-        }
+        public static bool IsEvenlyDivisibleBy(this int dividend, int divisor) => dividend % divisor == 0;
     }
 }

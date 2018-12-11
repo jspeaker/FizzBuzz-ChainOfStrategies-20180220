@@ -11,14 +11,14 @@ namespace FizzBuzz_ChainOfStrategies.Tests
         public void GivenFive_WhenCallingIsDivisibleByFive_ThenItShouldBeTrue()
         {
             // arrange / act / assert
-            5.IsDivisibleBy(5).Should().BeTrue();
+            5.IsEvenlyDivisibleBy(5).Should().BeTrue();
         }
 
         [Test, Category("Unit")]
         public void GivenFive_WhenCallingIsDivisibleBySix_ThenItShouldBeFalse()
         {
             // arrange / act / assert
-            5.IsDivisibleBy(6).Should().BeFalse();
+            5.IsEvenlyDivisibleBy(6).Should().BeFalse();
         }
     }
 }

@@ -2,16 +2,12 @@
 {
     public class TerminalStrategy : IIntegerToStringStrategy
     {
-        private readonly int _value;
+        private readonly Text.Text _text;
 
-        public TerminalStrategy(int value)
-        {
-            _value = value;
-        }
+        public TerminalStrategy(int value) : this(new Text.Text(value.ToString())) { }
 
-        public override string ToString()
-        {
-            return _value.ToString();
-        }
+        private TerminalStrategy(Text.Text text) => _text = text;
+
+        public override string ToString() => _text.ToString();
     }
 }

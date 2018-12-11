@@ -55,6 +55,11 @@
     <Compile Include="Strategies\BuzzStrategy.cs" />
     <Compile Include="Integer.cs" />
     <Compile Include="Strategies\FizzBuzzStrategy.cs" />
+    <Compile Include="Text\Buzz.cs" />
+    <Compile Include="Text\Fizz.cs" />
+    <Compile Include="Text\FizzBuzz.cs" />
+    <Compile Include="Text\IText.cs" />
+    <Compile Include="Text\Text.cs" />
     <Compile Include="Tests\IntegerTests.cs" />
     <Compile Include="Strategies\FizzStrategy.cs" />
     <Compile Include="Strategies\IIntegerToStringStrategy.cs" />

@@ -1,4 +1,5 @@
 ﻿using FizzBuzz_ChainOfStrategies.Extensions;
+using FizzBuzz_ChainOfStrategies.Text;
 
 namespace FizzBuzz_ChainOfStrategies.Strategies
 {
@@ -6,6 +7,7 @@ namespace FizzBuzz_ChainOfStrategies.Strategies
     {
         private readonly int _value;
         private readonly IIntegerToStringStrategy _nextStrategy;
+        private readonly Buzz _buzz = new Buzz();
 
         public BuzzStrategy(int value) : this(value, new FizzStrategy(value)) { }
 
@@ -17,9 +19,9 @@ namespace FizzBuzz_ChainOfStrategies.Strategies
 
         public override string ToString()
         {
-            if (!_value.IsDivisibleBy(5)) return _nextStrategy.ToString();
+            if (!_value.IsEvenlyDivisibleBy(5)) return _nextStrategy.ToString();
 
-            return "buzz";
+            return _buzz;
         }
     }
 }
