@@ -7,25 +7,25 @@ namespace FizzBuzz_ChainOfStrategies.Tests
     public class IntegerTests
     {
         [Test, Category("Unit")]
-        public void GivenTwo_WhenAskingForToString_ThenItShouldReturnStringTwo()
+        public void GivenTwo_WhenAskingForToStringViaImplicitOperator_ThenItShouldReturnStringTwo()
         {
             $"{new Integer(2)}".Should().Be("2");
         }
 
         [Test, Category("Unit")]
-        public void GivenSix_WhenAskingForToString_ThenItShouldReturnFizz()
+        public void GivenSix_WhenAskingForToStringViaImplicitOperator_ThenItShouldReturnFizz()
         {
             $"{new Integer(6)}".Should().Be("fizz");
         }
 
         [Test, Category("Unit")]
-        public void GivenTen_WhenAskingForToString_ThenItShouldReturnBuzz()
+        public void GivenTen_WhenAskingForToStringViaImplicitOperator_ThenItShouldReturnBuzz()
         {
             $"{new Integer(10)}".Should().Be("buzz");
         }
 
         [Test, Category("Unit")]
-        public void GivenThirty_WhenAskingForToString_ThenItShouldReturnFizzBuzz()
+        public void GivenThirty_WhenAskingForToStringViaImplicitOperator_ThenItShouldReturnFizzBuzz()
         {
             $"{new Integer(30)}".Should().Be("fizzbuzz");
         }

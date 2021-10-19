@@ -6,7 +6,7 @@ namespace FizzBuzz_ChainOfStrategies
     {
         private readonly IIntegerToStringStrategy _strategyChain;
 
-        public Integer(int value) : this(new FizzBuzzStrategy(value)) { }
+        public Integer(int value) : this(new IntegerToStringStrategyChain(value)) { }
 
         public Integer(IIntegerToStringStrategy strategyChain) => _strategyChain = strategyChain;
 

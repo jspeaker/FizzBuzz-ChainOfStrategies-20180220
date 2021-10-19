@@ -55,6 +55,12 @@
     <Compile Include="Strategies\BuzzStrategy.cs" />
     <Compile Include="Integer.cs" />
     <Compile Include="Strategies\FizzBuzzStrategy.cs" />
+    <Compile Include="Strategies\IntegerToStringStrategy.cs" />
+    <Compile Include="Strategies\IntegerToStringStrategyChain.cs" />
+    <Compile Include="Tests\StringStrategyTests.cs" />
+    <Compile Include="Tests\BuzzStrategyTests.cs" />
+    <Compile Include="Tests\FizzStrategyTests.cs" />
+    <Compile Include="Tests\FizzBuzzStrategyTests.cs" />
     <Compile Include="Text\Buzz.cs" />
     <Compile Include="Text\Fizz.cs" />
     <Compile Include="Text\FizzBuzz.cs" />
@@ -64,10 +70,9 @@
     <Compile Include="Strategies\FizzStrategy.cs" />
     <Compile Include="Strategies\IIntegerToStringStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategies\TerminalStrategy.cs" />
+    <Compile Include="Strategies\StringStrategy.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="Tests\IntExtensionsTests.cs" />
-    <Compile Include="Tests\StrategyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
